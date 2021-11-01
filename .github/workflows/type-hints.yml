@@ -19,9 +19,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python -m pip install --upgrade pipenv wheel
+        pipenv install --deploy --dev
     - name: Check type hints with ${{ matrix.python-version }}
       run: |
-        pip install mypy
-        mypy src
+        pipenv run mypy src
