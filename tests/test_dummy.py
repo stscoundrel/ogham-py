@@ -1,4 +1,4 @@
-from src import dummy_method
+from src.ogham import dummy_method
 
 def test_dummy_test_runs():
     result = dummy_method(1)
