@@ -1,5 +1,6 @@
 from src.ogham import ogham_to_letters
 
+
 def test_transforms_ballaqueeney_ogham_stone():
     ogham = '᚛ᚁᚔᚃᚐᚔᚇᚑᚅᚐᚄᚋᚐᚊᚔᚋᚒᚉᚑᚔ᚜ ᚛ᚉᚒᚅᚐᚃᚐ[ᚂᚔ]᚜'
     expected = 'bivaidonasmaqimucoi cunava[li]'
