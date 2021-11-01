@@ -1,6 +1,8 @@
 # Ogham
 
-Convert Ogham inscriptions to latin text & vice versa in Python.
+Convert Ogham inscriptions to latin text & vice versa.
+
+Python port of the original [Node.js library](https://github.com/stscoundrel/ogham).
 
 ### Install
 
@@ -18,7 +20,7 @@ from ogham import letters_to_ogham
 # "Netacari, nephew of Cagi", from Castletimon, Brittas Bay, Co Wicklow 
 result = letters_to_ogham('netacarinetaccagi')
 
-print(result) // ᚛ᚅᚓᚈᚐᚉᚐᚏᚔᚅᚓᚈᚐᚉᚉᚐᚌᚔ᚜
+print(result) # ᚛ᚅᚓᚈᚐᚉᚐᚏᚔᚅᚓᚈᚐᚉᚉᚐᚌᚔ᚜
 ```
 
 Ogham to latin text:
@@ -29,7 +31,7 @@ from ogham import ogham_to_letters
 # "Nettasagri, Briaci", from Bridell, Pembrokeshire
 result = ogham_to_letters('᚛ᚅᚓᚈᚈᚐᚄᚐᚌᚏᚔ ᚋᚐᚊᚔ ᚋᚒᚉᚑᚓ ᚁᚏᚔᚐᚉᚔ᚜')
 
-print(result) // nettasagri maqi mucoe briaci
+print(result) # nettasagri maqi mucoe briaci
 ```
 
 ### About Ogham
