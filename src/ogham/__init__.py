@@ -4,13 +4,8 @@ from .mappings import get_ogham_mapping
 def transform(content: str, mapping: 'dict[str, str]') -> str:
     result = ''
 
-    for part in content:
-        letter = part.lower()
-
-        if letter in mapping:
-            result += mapping.get(letter)
-        else:
-            result += part
+    for letter in content:
+        result += mapping.get(letter.lower(), letter)
 
     return result
 
