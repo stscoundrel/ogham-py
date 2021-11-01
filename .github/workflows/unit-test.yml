@@ -24,4 +24,4 @@ jobs:
     - name: Test with ${{ matrix.python-version }}
       run: |
         pip install pytest
-        pytest --import-mode=append tests/
+        pytest tests
