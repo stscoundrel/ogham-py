@@ -1,2 +1,2 @@
-def dummy_method(number: int) -> int:
-    return number + 1
+def ogham_to_letters(content: str) -> str:
+    return content
